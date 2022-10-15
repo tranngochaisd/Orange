@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:orange/widgets/bookinductionwidgets.dart';
+import 'package:orange/widgets/listItemwidgets.dart';
 import 'package:orange/widgets/searchwidget.dart';
 
 void main() {
@@ -65,11 +67,15 @@ class _Ui2State extends State<Ui2> {
               children: [
                 searchWidget(),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width / 30,
-                ),
-                SizedBox(
+                  // width: MediaQuery.of(context).size.width / 30,
                   height: MediaQuery.of(context).size.height / 50,
                 ),
+                BookInduction(),
+                SizedBox(
+                  // height: MediaQuery.of(context).size.height / 50,
+                  height: MediaQuery.of(context).size.height / 50,
+                ),
+                bookModule(),
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 40,
                 ),

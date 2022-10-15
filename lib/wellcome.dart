@@ -19,6 +19,14 @@ class WellcomeScreen extends StatelessWidget {
   }
 }
 
+// class LoginScreen extends StatefulWidget {
+//   const LoginScreen({
+//     Key? key,
+//   }) : super(key: key);
+
+//   @override
+//   _LoginScreenState createState() => _LoginScreenState();
+// }
 var maincolor = Colors.orange;
 var maincolour = [Color.fromARGB(255, 236, 160, 124), Colors.orange];
 
@@ -32,8 +40,7 @@ class wellcome extends StatefulWidget {
 
 class _wellcomeState extends State<wellcome> {
   var img =
-      'https://img.freepik.com/free-vector/coach-speaking-before-audience-mentor-presenting-charts-reports-employees-meeting-business-training-seminar-conference-vector-illustration-presentation-lecture-education_74855-8294.jpg';
-
+      'https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?cs=srgb&dl=pexels-pixabay-301920.jpg&fm=jpg';
   @override
   Widget build(BuildContext context) {
     var h = MediaQuery.of(context).size.height;
@@ -55,7 +62,7 @@ class _wellcomeState extends State<wellcome> {
             height: MediaQuery.of(context).size.height / 20,
           ),
           Text(
-            'Best podcasts for your comfert',
+            'Stugether',
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: MediaQuery.of(context).size.width / 10,
@@ -65,57 +72,68 @@ class _wellcomeState extends State<wellcome> {
             height: MediaQuery.of(context).size.height / 80,
           ),
           Text(
-            'Lat yorself be coim every one',
+            'Học cùng nhau không bao giờ chán',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: MediaQuery.of(context).size.width / 17.5,
             ),
           ),
+          // SizedBox(
+          //   height: MediaQuery.of(context).size.height / 20,
+          // ),
+          // const Expanded(child: Text("")),
+          // InkWell(
+          //   onTap: () {
+          //     // Navigator.push(
+          //     //     context,
+          //     //     MaterialPageRoute(
+          //     //         builder: (context) => const ()));
+          //   },
+          //   child: Container(
+          //     height: h / 14,
+          //     width: w,
+          //     decoration: BoxDecoration(
+          //       gradient: LinearGradient(colors: maincolour),
+          //       borderRadius: BorderRadius.circular(12),
+          //     ),
+          //     child: Center(
+          //       child: Text(
+          //         "Login",
+          //         style: TextStyle(
+          //             fontWeight: FontWeight.w600,
+          //             color: Colors.white,
+          //             fontSize: h / 55),
+          //       ),
+          //     ),
+          //   ),
+          // ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 20,
+            height: MediaQuery.of(context).size.height / 30,
           ),
-          InkWell(
-            onTap: () {
+          OutlinedButton(
+            onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const LoginScreen()));
             },
-            child: Container(
-              height: h / 14,
-              width: w / 2,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(colors: maincolour),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Center(
-                child: Text(
-                  "Let's Go",
-                  style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                      fontSize: h / 55),
-                ),
+            // onTap: () {
+            //
+            // },
+            child: Text(
+              'Get started',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: MediaQuery.of(context).size.width / 25,
               ),
             ),
-            // style: ButtonStyle(
-            //     backgroundColor: MaterialStateProperty.all(
-            //       Colors.grey[700],
-            //     ),
-            //     shape: MaterialStateProperty.all(RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(35))),
-            //     minimumSize: MaterialStateProperty.all(Size(
-            //         MediaQuery.of(context).size.width / 2.0,
-            //         MediaQuery.of(context).size.height / 12.0))),
-            // child: Text(
-            //   'Get started',
-            //   style: TextStyle(
-            //     color: Colors.white,
-            //     fontSize: MediaQuery.of(context).size.width / 25,
-            //   ),
-            // ),
-            // onPressed: () {
-            //   builder:
-            //   (context) => const LogInScreen();
-            // },
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                  Colors.orange,
+                ),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(35))),
+                minimumSize: MaterialStateProperty.all(Size(
+                    MediaQuery.of(context).size.width / 2.0,
+                    MediaQuery.of(context).size.height / 12.0))),
           ),
         ],
       ),

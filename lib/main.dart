@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orange/homescreen.dart';
 import 'package:orange/wellcome.dart';
+import 'package:orange/widgets/bookinductionwidgets.dart';
 
 import 'loginScreen.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Ui2(),
+      home: wellcome(),
     );
   }
 }
