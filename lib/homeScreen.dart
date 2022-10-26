@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
 import 'package:orange/widgets/bookinductionwidgets.dart';
+import 'package:orange/widgets/infomativBoxWidgets.dart';
 import 'package:orange/widgets/listItemwidgets.dart';
 import 'package:orange/widgets/searchwidget.dart';
 
@@ -60,12 +61,26 @@ class _Ui2State extends State<Ui2> {
             indicatorColor: Colors.transparent,
             labelColor: Colors.black,
           ),
+          appBar: AppBar(
+            // leading: ,
+            title: Text('Wellcom '),
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search),
+                onPressed: () {
+                  showSearch(context: context, delegate: CustommSearch());
+                },
+              ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 20,
+              ),
+            ],
+          ),
           body: SafeArea(
               child: Padding(
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
             child: Column(
               children: [
-                searchWidget(),
                 SizedBox(
                   // width: MediaQuery.of(context).size.width / 30,
                   height: MediaQuery.of(context).size.height / 50,
@@ -79,9 +94,37 @@ class _Ui2State extends State<Ui2> {
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 40,
                 ),
+                InfomativBox(),
               ],
             ),
           )),
+          drawer: Drawer(
+            child: ListView(
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+                DrawerHeader(
+                  child: Text('Team Viet Dev'),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
+                ListTile(
+                  title: Text('Item 1'),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+                ListTile(
+                  title: Text('Item 2'),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
+            ),
+          ),
+
+          // searchWidget();
         ));
   }
 }

@@ -57,6 +57,12 @@ class _wellcomeState extends State<wellcome> {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(img), fit: BoxFit.fill)),
+            // child: Image(
+            //   image: AssetImage(
+            //     'assets/1.png',
+            //     package: 'orange',
+            //   ),
+            // ),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 20,

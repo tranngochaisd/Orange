@@ -27,7 +27,7 @@ class bookModule extends StatelessWidget {
               width: 70,
               child: const Image(
                   image: NetworkImage(
-                      'https://lh3.googleusercontent.com/proxy/hBvryjYUZeFOKaPifNNe4uhcl9K1uOzmgTl46RQKbOc8NcCBug1JqR4PhqT2KkjEFOUxupuCHzCR0ME_Xs7Rq37cU0q02xsMDfKuiDCHWNx4dsHL8HuuYIQw6fjFkqWHu1UDld0')),
+                      'https://cdn-icons-png.flaticon.com/512/4/4259.png')),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white54,
@@ -45,7 +45,7 @@ class bookModule extends StatelessWidget {
               width: 70,
               child: Image(
                   image: NetworkImage(
-                      'https://www.transparentpng.com/thumb/cake/taDJrn-cake-png-icon.png')),
+                      'https://cdn-icons-png.flaticon.com/512/2916/2916315.png')),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white54,
@@ -63,7 +63,7 @@ class bookModule extends StatelessWidget {
               width: 70,
               child: Image(
                   image: NetworkImage(
-                      'http://assets.stickpng.com/thumbs/5cb77519a7c7755bf004c0ff.png')),
+                      'https://cdn-icons-png.flaticon.com/512/73/73443.png')),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white54,

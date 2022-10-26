@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import 'homeScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -125,10 +127,8 @@ class _LoginScreenState extends State {
                       const Expanded(child: Text("")),
                       InkWell(
                         onTap: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => const ()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Ui2()));
                         },
                         child: Container(
                           height: h / 14,

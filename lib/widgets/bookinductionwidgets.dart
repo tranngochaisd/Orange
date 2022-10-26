@@ -32,7 +32,7 @@ class BookInduction extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        "Upcoming",
+                        "new feature",
                         style: TextStyle(color: Colors.white, fontSize: 35),
                       ),
                       const Text(
